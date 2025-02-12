@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digit Recognizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Digit recognition</h1>
+    <p class="instruction">Hold down the mouse button to draw. Release to send for prediction.</p>
+    <div class="result-box">
+      <p class="instruction2">Draw a Digit (0-9)</p>
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <div id="result">
+        <p>Digit: <span id="digit"></span></p>
+        <p>Confidence: <span id="confidence"></span></p>
+      </div>
+      <div id="blur"></div>
+      <div class="oldImageContainer">
+        <p>Previous:</p>
+        <div id="oldImageContainer"></div>
+      </div>
+    </div>
+  </main>
+  
+  
+</body>
+</html>
